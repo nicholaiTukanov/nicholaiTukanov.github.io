@@ -23,6 +23,11 @@ hr {
   border-top: 1px solid var(--global-divider-color);
 }
 
+body {
+  font-size: 1.2rem;
+  font-family: "Andale Mono", monospace;
+}
+
 table {
   td,
   th {
@@ -120,7 +125,7 @@ blockquote {
   .address {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: fantasy;
+    font-family: "Andale Mono", monospace;
 
     p {
       display: inline-block;
