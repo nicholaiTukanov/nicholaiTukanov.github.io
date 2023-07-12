@@ -38,7 +38,7 @@
         institution: University of Texas at Austin
         year: 2019-2020
         description:
-        - <a href="https://github.com/flame/blis/pull/298">Introduced POWER10 into numpy</a>
+        - <a href="https://github.com/flame/blis/pull/355">Implemented POWER9 GEMM kernels for blis</a>
         - Researched BLAS on CPUs to maximize compute efficiency
       
     - title: Teaching Assistant
