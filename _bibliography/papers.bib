@@ -1,33 +1,51 @@
 ---
 ---
 
-@inproceedings{tukanov2022modeling,
+@inproceedings{matrix-engines,
   abbr={IEEE},
-  title={Modeling Matrix Engines for Portability and Performance},
+  author={Tukanov, Nicholai and Srinivasaraghavan, Rajalakshmi and Moreira, José E. and Low, Tze Meng},
+  booktitle={2022 IEEE International Parallel and Distributed Processing Symposium (IPDPS)}, 
+  title={Modeling Matrix Engines for Portability and Performance}, 
   website={https://ieeexplore.ieee.org/abstract/document/9820727},
-  author={Tukanov, Nicholai and Srinivasaraghavan, Rajalakshmi and Moreira, Jos{\'e} E and Low, Tze Meng},
-  booktitle={2022 IEEE International Parallel and Distributed Processing Symposium (IPDPS)},
-  pages={1173--1183},
   year={2022},
-  organization={IEEE}
+  volume={},
+  number={},
+  pages={1173-1183},
+  abstract={Matrix engines, also known as matrix-multiplication accel-erators, capable of computing on 2D matrices of various data types are traditionally found only on GPUs. However, they are increasingly being introduced into CPU architectures to support AI/ML computations. Unlike traditional SIMD functional units, these accelerators require both the input and output data to be packed into a specific 2D-data layout that is often dependent on the input and output data types. Due to the large variety of supported data types and architectures, a common abstraction is required to unify these seemingly disparate accelerators and more efficiently produce high-performance code. In this paper, we show that the hardware characteristics of a vast array of different matrix engines can be unified using a single analytical model that casts matrix engines as an accumulation of multiple outer-products (also known as rank-k updates). This allows us to easily and quickly develop high-performance kernels using matrix engines for different architectures. We demonstrate our matrix engine model and its portability by applying it to two distinct architectures. Using our model, we show that high-performance computational kernels and packing routines required for high-performance dense linear algebra libraries can be easily designed. Furthermore, we show that the performance attained by our implementations is around 90–99 % (80–95 % on large problems) of the theoretical peak throughput of the matrix engines.},
+  keywords={},
+  doi={10.1109/IPDPS53621.2022.00117},
+  ISSN={1530-2075},
+  month={May},
 }
 
-@inproceedings{low2022zoom,
-  abbr={IEEE},
-  title={Zoom Out: Abstractions for Efficient Radar Algorithms on COTS architectures},
-  website={https://ieeexplore.ieee.org/abstract/document/9975097},
+
+@INPROCEEDINGS{zoom,
   author={Low, Tze Meng and Chi, Yuejie and Hoe, James and Kumar, Swarun and Prabhakara, Akarsh and Shi, Laixi and Sridhar, Upasana and Tukanov, Nicholai and Wang, Chengyue and Wu, Yuchen},
-  booktitle={2022 IEEE International Symposium on Phased Array Systems \& Technology (PAST)},
-  pages={1--6},
+  booktitle={2022 IEEE International Symposium on Phased Array Systems & Technology (PAST)}, 
+  title={Zoom Out: Abstractions for Efficient Radar Algorithms on COTS architectures}, 
+  website={https://ieeexplore.ieee.org/abstract/document/9975097},
   year={2022},
-  organization={IEEE}
+  volume={},
+  number={},
+  pages={1-6},
+  abstract={The advent of machine learning has resulted in the rapid development of machine learning accelerators that are capable of computing tensor operations efficiently. Specifically, these accelerators compute matrix-matrix multiplication, a key routine in linear algebra libraries and machine learning. While using the accelerators would result in high performance radar signal processing, the algorithms used often require significant redesign in order to efficiently map them on to existing machine-learning hardware. In this paper, we show that higher levels of abstraction facilitate the efficient mapping of array algorithms onto commercial-off-the-shelf (COTS) machine learning hardware that results in higher performance in terms of execution time and/or throughput. Furthermore, similar levels of abstraction can be used to design efficient implementations of ML algorithms for radar processing, resulting in improved radar capabilities.},
+  keywords={},
+  doi={10.1109/PAST49659.2022.9975097},
+  ISSN={},
+  month={Oct}
 }
 
-@article{sridhar2023small,
-  abbr={arXiv},
-  title={SMaLL: A Software Framework for portable Machine Learning Libraries},
-  website={https://arxiv.org/abs/2303.04769},
-  author={Sridhar, Upasana and Tukanov, Nicholai and Binder, Elliott and Low, Tze Meng and McMillan, Scott and Schatz, Martin D},
-  journal={arXiv preprint arXiv:2303.04769},
-  year={2023}
+@article{small,
+  author = {Sridhar, Upasana and Tukanov, Nicholai and Binder, Elliott and Low, Tze Meng and McMillan, Scott and Schatz, Martin D.},
+  title = {SMaLL: Software for Rapidly Instantiating Machine Learning Libraries},
+  year = {2023},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  issn = {1539-9087},
+  website = {https://doi.org/10.1145/3607870},
+  doi = {10.1145/3607870},
+  abstract = {Interest in deploying deep neural network (DNN) inference on edge devices has resulted in an explosion of the number and types of hardware platforms that machine learning (ML) libraries must support. High-level programming interfaces, such as TensorFlow, can be readily ported across different devices; however, maintaining performance when porting the low-level implementation is more nuanced. High-performance inference implementations require an effective mapping of the high-level interface to the target hardware platform. Commonly, this mapping may use optimizing compilers to generate code at compile time or high-performance vendor libraries that have been specialized to the target platform. Both approaches rely on expert knowledge across levels to produce an efficient mapping. This makes supporting new architectures difficult and time-consuming. In this work, we present a DNN library framework, SMaLL, that is easily extensible to new architectures. The framework uses a unified loop structure and shared, cache-friendly data format across all intermediate layers, eliminating the time and memory overheads incurred by data transformation between layers. Each layer is implemented by specifying its dimensions and a kernel, the key computing operation of that layer. The unified loop structure and kernel abstraction allows the reuse of code across layers and computing platforms. New architectures only require a few hundred of lines in the kernel to be redesigned. To show the benefits of our approach, we have developed software that supports a range of layer types and computing platforms; this software is easily extensible for rapidly instantiating high-performance DNN libraries. An evaluation of the portability of our framework is shown by instantiating end-to-end networks from the MLPerf:tiny benchmark suite on five ARM platforms and one x86 platform (an AMD Zen 2). We also show that the end-to-end performance is comparable to or better than ML frameworks such as TensorFlow, TVM, and LibTorch.},
+  note = {Just Accepted},
+  journal = {ACM Trans. Embed. Comput. Syst.},
+  month = {jul}
 }
