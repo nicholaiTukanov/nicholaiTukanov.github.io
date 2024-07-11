@@ -9,21 +9,16 @@
 - title: Education
   type: time_table
   contents:
-    - title: Masters in Electrical and Computer Engineering
+    - title: Masters in ECE
       institution: Carnegie Mellon University
       year: 2024
-    - title: BS in Computer Science
+    - title: BS in CS
       institution: University of Texas at Austin
       year: 2020
 
 - title: Experience
   type: time_table
   contents:
-   - title: Software Engineer
-      institution: NVIDIA
-      description:
-        - <a href="https://developer.nvidia.com/nvpl">NVPL BLAS</a>
-
     - title: Software Engineer
       institution: CMU SEI
       year: 2023
@@ -53,18 +48,14 @@
         - <a href="https://courses.ece.cmu.edu/18645">Assisted for How to Write Fast Code I</a>
         - <a href="https://www.cs.utexas.edu/courses/378-programming-correctness-and-performance">Assisted for Programming for Correctness and Performance</a>
 
-- title: Open Source Projects
-  type: time_table
+- title: Projects
+  type: nested_list
   contents:
+    - title: <a href="https://github.com/ggerganov/llama.cpp">llama.cpp</a>
+    - title: <a href="https://developer.nvidia.com/nvpl">NVPL</a>
     - title: <a href="https://github.com/CMU-SPEED/SMaLLFramework">SMaLL</a>
-      year: 2023-now
-      description: SMaLL -- Software for rapidly instantiating Machine Learning Libraries.
     - title: <a href="https://github.com/flame/blis">BLIS</a>
-      year: 2019-2021
-      description: BLIS -- BLAS-like Library Instantiation Software Framework.
     - title: <a href="https://github.com/numpy/numpy">numpy</a>
-      year: 2021
-      description: The fundamental package for scientific computing with Python.
 
 - title: Academic Interests
   type: nested_list
