@@ -20,8 +20,8 @@
   type: time_table
   contents:
    - title: Software Engineer
-      institution: CMU SEI
-      year: 2023
+      institution: NVIDIA
+      year: current
       description:
         - <a href="https://developer.nvidia.com/nvpl">NVPL BLAS</a>
 
