@@ -9,9 +9,9 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
+    - title: Masters in Electrical and Computer Engineering
       institution: Carnegie Mellon University
-      year: TBD
+      year: 2024
     - title: BS in Computer Science
       institution: University of Texas at Austin
       year: 2020
@@ -19,6 +19,12 @@
 - title: Experience
   type: time_table
   contents:
+   - title: Software Engineer
+      institution: CMU SEI
+      year: 2023
+      description:
+        - <a href="https://developer.nvidia.com/nvpl">NVPL BLAS</a>
+
     - title: Software Engineer
       institution: CMU SEI
       year: 2023
@@ -65,9 +71,9 @@
   type: nested_list
   contents:
     - title: High Performance Computing
-    - title: Algorithms
+    - title: Large Languague Models
+    - title: Quantum Computing
     - title: Computer Vision
-    - title: Transformers
 
 - title: Other Interests
   type: list
