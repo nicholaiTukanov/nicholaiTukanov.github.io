@@ -21,7 +21,6 @@
   contents:
    - title: Software Engineer
       institution: NVIDIA
-      year: current
       description:
         - <a href="https://developer.nvidia.com/nvpl">NVPL BLAS</a>
 
