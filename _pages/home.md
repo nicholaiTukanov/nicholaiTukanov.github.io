@@ -19,6 +19,6 @@ social: false  # includes social icons at the bottom of the page
 
 Hello 😄 I am a Software Engineer at NVIDIA. My focus is in high performance computing. 
 
-Outside of work, I love to hike, play video games, and hang out with my fiance and cats :relaxed:. 
+Outside of work, I love to hike, play video games, and hang out with my wife and cats :relaxed:. 
 
 <img style="float: right;"  src="../assets/img/cats.jpg" alt="cats" width="400"/>
